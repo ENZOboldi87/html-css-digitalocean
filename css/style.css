@@ -39,6 +39,11 @@ body {
 .ms_jumbotron .text_jumbo_sx > p {
   font-size: 20px;
 }
+
+.ms_jumbotron .text_jumbo_dx > h2.blue {
+  color: blue;
+}
+
 .text_jumbo_dx {
   background: white;
   color: black;
@@ -60,17 +65,6 @@ body {
   margin: 15px 0;
 }
 
-.testo-verde {
-  background-color: green;
-  height: 50px;
-}
-
-
-
-.testo-form-sx {
-  background: cyan;
-  height: 300px;
-}
 /* ends jumbotron */
 
 /* bottom jumbotron */
