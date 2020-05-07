@@ -4,12 +4,33 @@ body {
   padding-top: 50px;
 }
 
-.wrapper {
+body .wrapper {
   width: 80%;
   max-width: 992px;
   margin: 0 auto;
+  padding: 30px 0;
+}
+
+body .ms_title_section > h2,h4 {
+  color: #031c4e;
+}
+
+body .ms_title_section > p {
+  font-size: 20px;
+  padding: 20px 0;
 }
 /* ends general rules */
+
+/* NOTE: da controllare */
+/* media query */
+@media screen and (max-width: 768px ){
+  body .carousel::before, .carousel::after {
+    display: none;
+   }
+
+ }
+/* NOTE: da controllare */
+/* ends media query */
 
   /* header */
 .navbar-default .navbar-nav > li > a {
@@ -33,9 +54,11 @@ body {
 /* jumbotron */
 #ms_jumbo {
   background-image: url(../img/bg-home-1-d54581d7.jpg);
-  padding: 80px 0;
-  height: 500px;
+  padding: 60px 0;
   color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .ms_jumbotron .text_jumbo_sx > h1 {
@@ -70,51 +93,95 @@ body {
 .text_jumbo_dx .form-group > input {
   margin: 15px 0;
 }
-
 /* ends jumbotron */
 
 /* bottom jumbotron */
 #bg_grey {
   background: #f3f5f9;
-  padding-top: 10px;
+  padding: 40px 0;
   text-align: center;
+  color: #5c6a88;
 }
 
-.clients {
-  display: inline;
-}
-
-.clients > img {
-  width: 180px;
-  vertical-align: middle;
+.ms_customer_list > li > img {
+  width: 160px;
   padding: 5px;
-}
-
-.loghi {
-  width: 100%;
-  height: 50px;
 }
 /* ends bottom jumbotron */
 
-/* descripton section */
+/* upper descripton section */
+#bg_white {
+  color: #5c6a88;
+  padding: 40px 0;
+}
+
+.des_content {
+  padding: 10px;
+}
 
 .list-group {
   border-left: 1px solid #5f5f5f;
-}
-.list-group > .list-group-item{
-  border: none;
+  font-size: 20px;
 }
 
-.testo_ds {
-  height: 50px;
-  background: blue;
+.list-group > .list-group-item{
+  border: none;
+  color: #75809a;
 }
+/* ends uppper descripton section */
+
+/* upper slides section */
+ .carousel > img {
+   width: 50%;
+   padding: 20px 0;
+ }
+
+ .ms_list_und_slides > li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #0069ff;
+  border-radius: 50%;
+ }
+
+.ms_list_und_slides > li:first-child {
+  background-color: #0069ff;
+}
+/* ends upper slides section */
+
+/* wall street section */
+#wall_street {
+  background: rgb(0,30,154);
+  background: linear-gradient(360deg, rgba(0,30,154,1) 0%, rgba(0,72,197,1) 100%);
+  color: white;
+}
+
+ .pro {
+   border-bottom: 1px solid white;
+   padding: 10px;
+ }
+
+.no_gutter {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.ms_pads {
+  padding: 40px;
+}
+/* ends wall street section */
+
+
+
+
+
+
+
 
 
 
 /* footer */
 
 footer {
-  background: blue;
-  height: 200px;
+  background: #031c4e;
 }
