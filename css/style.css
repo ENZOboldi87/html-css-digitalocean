@@ -22,7 +22,7 @@ body .ms_title_section > p {
 /* ends general rules */
 
 /* section rules */
-#ms_jumbo {
+.ms_jumbotron {
   background-image: url(../img/bg-home-1-d54581d7.jpg);
   padding: 60px 0;
   color: white;
@@ -31,19 +31,19 @@ body .ms_title_section > p {
   background-size: cover;
 }
 
-#bg_grey {
+.bg_grey {
   background: #f3f5f9;
   padding: 40px 0;
   text-align: center;
   color: #5c6a88;
 }
 
-#bg_white {
+.bg_white {
   color: #5c6a88;
   padding: 40px 0;
 }
 
-#bg_blue {
+.bg_blue {
   background: rgb(0,30,154);
   background: linear-gradient(360deg, rgba(0,30,154,1) 0%, rgba(0,72,197,1) 100%);
   color: white;
@@ -57,18 +57,7 @@ footer {
 }
 /* ends section rules */
 
-/* NOTE: da controllare */
-/* media query */
-@media screen and (max-width: 768px ){
-  body .carousel::before, .carousel::after {
-    display: none;
-   }
-
- }
-/* NOTE: da controllare */
-/* ends media query */
-
-  /* header */
+/* header */
 .navbar-default .navbar-nav > li > a {
   color: #031b4e;
   font-weight: 400;
@@ -84,19 +73,25 @@ footer {
   object-fit: cover;
   padding: 10px;
 }
+
+nav > button {
+  margin:10px 0;
+}
+
+
 /* ends header */
 
 /* main */
 /* jumbotron */
-.ms_jumbotron .text_jumbo_sx > h1 {
+.text_jumbo_sx > h1 {
   font-size: 50px;
 }
 
-.ms_jumbotron .text_jumbo_sx > p {
+.text_jumbo_sx > p {
   font-size: 20px;
 }
 
-.ms_jumbotron .text_jumbo_dx > h2.blue {
+.text_jumbo_dx > h2.blue {
   color: blue;
 }
 
@@ -123,7 +118,6 @@ footer {
 /* ends jumbotron */
 
 /* bottom jumbotron */
-
 .ms_customer_list > li > img {
   width: 160px;
   padding: 5px;
