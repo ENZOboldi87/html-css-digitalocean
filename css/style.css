@@ -58,6 +58,10 @@ footer {
 /* ends section rules */
 
 /* header */
+
+header .navbar {
+  background-color: #ffffff;
+}
 .navbar-default .navbar-nav > li > a {
   color: #031b4e;
   font-weight: 400;
@@ -110,6 +114,7 @@ footer {
 
 .ms_button{
   width: 100%;
+  margin: 3px 0;
 }
 
 .text_jumbo_dx .form-group > input {
@@ -118,9 +123,19 @@ footer {
 /* ends jumbotron */
 
 /* bottom jumbotron */
+
+.ms_customer_list {
+ margin: 0;
+ padding: 0;
+}
+
+.ms_customer_list li{
+  width: calc( (100% / 6 ) - 10px );
+  padding: 10px;
+}
+
 .ms_customer_list > li > img {
-  width: 160px;
-  padding: 5px;
+  max-width: 100%;
 }
 /* ends bottom jumbotron */
 
@@ -141,6 +156,21 @@ footer {
 /* ends uppper descripton section */
 
 /* upper slides section */
+
+.arro_left {
+  position: absolute;
+  bottom: 35%;
+  left: 20%;
+  font-size: 50px;
+}
+
+.arro_right {
+  position: absolute;
+  bottom: 35%;
+  right: 20%;
+  font-size: 50px;
+}
+
  .carousel > img {
    width: 50%;
    padding: 20px 0;
@@ -183,7 +213,7 @@ footer {
 }
 
 .fake_carousel_content {
-  max-width: 650px;
+  max-width: 50%;
   background: white;
   display: inline-block;
   padding: 50px 0;
@@ -236,3 +266,22 @@ footer {
   margin: 0;
 }
 /* ends footer */
+
+/* media query */
+
+@media all and (max-width: 767px){
+  .ms_customer_list {
+   margin: 0;
+   padding: 0;
+  }
+
+  .ms_customer_list li{
+    width: calc( (100% / 3 ) - 10px );
+    padding: 10px;
+  }
+
+  .ms_customer_list > li > img {
+    max-width: 100%;
+  }
+
+}
